@@ -1,9 +1,13 @@
-//  To create React components
+//  Create React Components
 import React from 'react';
-// To render React components to the DOM
+
+// Render React Components to the DOM
 import ReactDOM from 'react-dom/client';
+
 // Importing the Main App Component
 import App from './App.jsx';
+
+// For global styling
 import './index.css';
 
 // Render the App Component

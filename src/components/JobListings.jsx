@@ -1,9 +1,9 @@
-// To manage state and handle side effects
+// To manage state and handle effects
 import { useState, useEffect } from 'react';
 import JobListing from './JobListing';
 import Spinner from './Spinner';
 
-// JobListings component accepts ishome with a default value false as prop
+// JobListings component accepts isHome with a default value false as prop
 const JobListings = ({ isHome = false }) => {
   // jobs array to store the fetched job listings
   const [jobs, setJobs] = useState([]);

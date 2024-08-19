@@ -1,8 +1,10 @@
-// Card functional component takes childrena and bg as props
+// 'Card' functional component takes 'children' and 'bg' as props
 const Card = ({ children, bg = "bg-gray-100" }) => {
   
-  // To render al elements or components inside card
+  // Render all elements or components inside 'Card'
+  // Make dynamic by using template literals
   return <div className={`${bg} p-6 rounded-lg shadow-md`}>
+    {/* Passing 'children' */}
     {children}
   </div>;
 };

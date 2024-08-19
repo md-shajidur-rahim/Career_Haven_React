@@ -1,3 +1,4 @@
+/* Add Tailwind directives to CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -1,14 +1,15 @@
+// Importing 'Link' component used for navigation in client-side routing
 import { Link } from 'react-router-dom';
 import Card from './Card';
 
-// HomeCards Component which displays title, description and button for job applicants and recruiters
+// 'HomeCards' Component displays title, description and button for job applicants and recruiters
 const HomeCards = () => {
   return (
     <section className="py-4">
       <div className="container-xl lg:container m-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
 
-          {/* Job Applicants */}
+          {/* For job applicants */}
           <Card>
             <h2 className="text-2xl font-bold">For Developers</h2>
             <p className="mt-2 mb-4">
@@ -22,7 +23,7 @@ const HomeCards = () => {
             </Link>
           </Card>
 
-          {/* Job Recruiters */}
+          {/* For job recruiters */}
           <Card bg="bg-indigo-100">
             <h2 className="text-2xl font-bold">For Employers</h2>
             <p className="mt-2 mb-4">
