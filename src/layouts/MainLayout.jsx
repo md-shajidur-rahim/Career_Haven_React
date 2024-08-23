@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import Navbar from '../components/Navbar';
 
-// 'MainLayout' component contais all elements
+// 'MainLayout' component contais all elements to display
 const MainLayout = () => {
   return (
     <>

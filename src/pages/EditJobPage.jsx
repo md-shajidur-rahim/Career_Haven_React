@@ -1,12 +1,15 @@
 import { useState } from 'react';
-// useLoaderData Hook to fetch data passed by the loader function
-import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-// EditJobPage component to edit job listings 
+// 'useLoaderData' Hook to fetch data passed by the loader function
+import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
+
+// 'EditJobPage' component to edit job listings 
 const EditJobPage = ({ updateJobSubmit }) => {
-  // Using useLoaderData to fetch the job data
+
+  // Using 'useLoaderData' to fetch the job data
   const job = useLoaderData();
+  
   // To initialize state variables with the job's current data
   const [title, setTitle] = useState(job.title);
   const [type, setType] = useState(job.type);
@@ -84,6 +87,7 @@ const EditJobPage = ({ updateJobSubmit }) => {
                 <option value='Part-Time'>Part-Time</option>
                 <option value='Remote'>Remote</option>
                 <option value='Internship'>Internship</option>
+                <option value='Hybrid'>Hybrid</option>
               </select>
             </div>
 
@@ -96,7 +100,7 @@ const EditJobPage = ({ updateJobSubmit }) => {
                 id='title'
                 name='title'
                 className='border rounded w-full py-2 px-3 mb-2'
-                placeholder='eg. Beautiful Apartment In Miami'
+                placeholder='eg. Anywhere in Bangladesh'
                 required
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
@@ -135,16 +139,14 @@ const EditJobPage = ({ updateJobSubmit }) => {
                 value={salary}
                 onChange={(e) => setSalary(e.target.value)}
               >
-                <option value='Under $20K'>Under $20K</option>
-                <option value='$20K - $30K'>$20K - $30K</option>
-                <option value='$30K - $40K'>$30K - $40K</option>
-                <option value='$40K - $50K'>$40K - $50K</option>
-                <option value='$50K - $60K'>$50K - $60K</option>
-                <option value='$60K - $70K'>$60K - $70K</option>
-                <option value='$70K - $80K'>$70K - $80K</option>
-                <option value='$80K - $90K'>$80K - $90K</option>
-                <option value='$90K - $100K'>$90K - $100K</option>
+                <option value='Under $20K'>Under $10K</option>
+                <option value='$20K - $30K'>$10K - $20K</option>
+                <option value='$20K - $30K'>$20K - $40K</option>
+                <option value='$30K - $40K'>$40K - $60K</option>
+                <option value='$40K - $50K'>$60K - $80K</option>
+                <option value='$50K - $60K'>$80K - $100K</option>
                 <option value='Over $100K'>Over $100K</option>
+                <option value='Salary negociable'>Salary negociable</option>
               </select>
             </div>
 

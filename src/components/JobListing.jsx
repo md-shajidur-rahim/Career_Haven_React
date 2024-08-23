@@ -3,12 +3,12 @@ import { useState } from 'react';
 import { FaMapMarker } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-// 'JobListing' component which takes 'job' prop
+// 'JobListing' component which takes 'job' prop to display the job
 const JobListing = ({ job }) => {
   // To control whether the full job description is shown
   const [showFullDescription, setShowFullDescription] = useState(false);
 
-  // To toggle job description length --> trancuated or full
+  // To toggle 'showFullDescription'; tranculate 0 to 90
   let description = job.description;
   if (!showFullDescription) {
     description = description.substring(0, 90) + "...";

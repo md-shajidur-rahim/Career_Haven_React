@@ -1,9 +1,14 @@
-// useParams: to get URL parameters
-// useLoaderData: to load data for the route 
-// useNavigate: to programmatically navigate
+// useParamsv --> to get URL parameters
+// useLoaderData --> to load data for the route 
+// useNavigate --> to programmatically navigate
 import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
+
+// Importing some React icons
 import { FaArrowLeft, FaMapMarker } from 'react-icons/fa';
+
+// For linking 
 import { Link } from 'react-router-dom';
+
 // To display toast notifications
 import { toast } from 'react-toastify';
 

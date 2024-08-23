@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-// ViewAllJobs component displays a button, which navigates to the /jobs route when clicked
+// 'ViewAllJobs' component displays a button, which navigates to '/jobs' route when clicked
 const ViewAllJobs = () => {
 
   return (

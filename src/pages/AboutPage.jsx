@@ -1,8 +1,11 @@
+// Import some react icons
 import { VscBook, VscChecklist, VscSave, VscStarFull } from "react-icons/vsc";
 
+// 'AboutPage' component to display the paragraphs
 const AboutPage = () => {
   return (
     <section className="text-center flex flex-col justify-center items-center h-auto py-8">
+
       <div className="flex items-center mb-4">
         <VscBook className="text-black text-4xl mr-4" />
         <h1 className="text-4xl font-bold">Introduction to React</h1>

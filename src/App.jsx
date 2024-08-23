@@ -61,7 +61,7 @@ const App = () => {
     return;
   };
 
-  // 'router' setup to define the routes and their respective components
+  // 'router' component to define the routes and their respective components
   const router = createBrowserRouter(
     createRoutesFromElements(
 

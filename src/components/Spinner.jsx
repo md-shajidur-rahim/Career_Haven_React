@@ -1,14 +1,14 @@
-// Importing ClipLoader component from the react-spinners library that renders a clip-style loading spinner
+// Importing ClipLoader component from the react-spinners library 
+// to render a clip-style loading spinner
 import ClipLoader from 'react-spinners/ClipLoader';
 
-// override component
+// 'override' component
 const override = {
   display: 'block',
   margin: '100px auto',
 };
 
-// Spinner component recieves loading as prop
-// To display a loading spinner
+// 'Spinner' component recieves 'loading' prop to display the loading spinner
 const Spinner = ({ loading }) => {
 
   return (
